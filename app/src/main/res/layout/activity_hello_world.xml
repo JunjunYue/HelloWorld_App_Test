@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jyue.week9_demo_helloworld.HelloWorld">
+
+    <!-- Use Relative Layout to place app widgets -->
+    <!-- change layout_height to wrap_content so the relatively layout wraps the widgets placed in -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <!-- place TextView widget to display Hello World and centralize the location-->
+        <!-- set up values for text, textSize and textColor properties-->
+        <TextView
+            android:id="@+id/textViewDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/message_text"
+            android:textSize="@dimen/message_text_size"
+            tools:text="@string/message_text"
+            tools:textColor="@android:color/black" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="74dp"
+        >
+
+        <!-- Use TextView and EditText to allow users to input their names
+             so we can change the text displayed in hello world-->
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="42dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="60dp"
+            android:text="Input Name: "
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="@dimen/sub_message_text_size" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewName"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_toEndOf="@+id/textViewName"
+            android:layout_toRightOf="@+id/textViewName"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="@dimen/sub_message_text_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="185dp">
+
+        <!-- Use Button allow users to click to chagne the text displayed in Hello World -->
+
+        <Button
+            android:id="@+id/buttonDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:text="Display" />
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

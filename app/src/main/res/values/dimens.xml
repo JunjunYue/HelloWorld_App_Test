@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Add dimens to control the value for message text size used in the layout XML-->
+    <dimen name="message_text_size">30sp</dimen>
+    <dimen name="sub_message_text_size">24sp</dimen>
+</resources>

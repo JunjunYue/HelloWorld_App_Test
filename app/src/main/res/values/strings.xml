@@ -1,0 +1,6 @@
+<resources>
+    <!-- Changed App Name -->
+    <!-- Added message text to control the initialization of the Hello World display text -->
+    <string name="app_name">My 1st Android App - Hello World</string>
+    <string name="message_text">Hello World!</string>
+</resources>

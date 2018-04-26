@@ -6,9 +6,11 @@
     android:layout_height="match_parent"
     tools:context="com.example.jyue.week9_demo_helloworld.HelloWorld">
 
+    <!-- my first GitHub repository -->
     <!-- Use Relative Layout to place app widgets -->
     <!-- change layout_height to wrap_content so the relatively layout wraps the widgets placed in -->
 
+    <!-- Add this comments to show change -->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

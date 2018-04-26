@@ -7,11 +7,10 @@
     tools:context="com.example.jyue.week9_demo_helloworld.HelloWorld">
 
     <!-- my first GitHub repository -->
+    <!-- My first GitHub respsibory works -->
+
     <!-- Use Relative Layout to place app widgets -->
     <!-- change layout_height to wrap_content so the relatively layout wraps the widgets placed in -->
-
-    <!-- Try Amend Commit -->
-
 
     <RelativeLayout
         android:layout_width="match_parent"
